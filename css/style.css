@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+    grid-area: 100%;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 50px 600px 75px;
+    grid-template-areas:
+    "tl tr"
+    "main sidebar"
+    "ft ft";
+}
+
+.header {
+    border: 1px solid red;
+    grid-area: tl;
+}
+.sidebar {
+    border: 1px solid red;
+    grid-area: sidebar;
+}
+.main {
+    border: 1px solid red;
+    grid-area: main;
+}
+.footer {
+    border: 1px solid red;
+    grid-area: ft;
+}
