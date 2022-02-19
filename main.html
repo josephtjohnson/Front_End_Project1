@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+<style>
+    .container{
+        display: grid;
+        grid-area: 100%;
+        grid-template-columns: 60vw 40vw;
+        grid-template-rows: 10vh 85vh 5vh;
+        grid-template-areas:
+        "tl tr"
+        "main sidebar"
+        "ft ft";
+    }
+
+    .header {
+        border: 1px solid teal;
+        font-size: 36px;
+        grid-area: tl;
+    }
+    .nav {
+        border: 1px solid teal;
+        grid-area: tr;
+    }
+    #nestedGrid {
+        display: grid;
+        grid-template-columns: 20vw 20vw;
+        border: 1px solid orange;
+        grid-template-areas:
+        "l r";
+        justify-content: center;
+        align-items: center;
+    }
+    .nav1 {
+        display: flex;
+        border: 1px solid teal;
+        grid-area: l;
+    }
+    .nav2 {
+        display: flex;
+        border: 1px solid teal;
+        grid-area: r;
+    }
+    .sidebar {
+        border: 1px solid teal;
+        grid-area: sidebar;
+    }
+    .main {
+        border: 1px solid teal;
+        grid-area: main;
+        background-image: url("images/homepage.jfif");
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    .footer {
+        border: 1px solid teal;
+        grid-area: ft;
+    }
+</style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">try.</div>
+            <div class="nav">
+                <div id="nestedGrid">
+                    <div class ="nav1"> Blog</div>
+                    <div class ="nav2">About Me</div>
+                </div>
+            </div>
+            <div class="main"><h3>What happened to "try"?</h3></div>
+            <div class="sidebar">sidebar</div>
+            <div class="footer">footer</div>
+        </div>
+    </body>
+</html>
