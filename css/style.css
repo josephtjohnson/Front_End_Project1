@@ -1,27 +1,33 @@
-.container{
+.nav {
+    display: flex;
+    border: 1px solid teal;
+    grid-area: nav;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+}
+#nestedGrid {
     display: grid;
-    grid-area: 100%;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 50px 600px 75px;
+    grid-template-columns: 20vw 20vw;
     grid-template-areas:
-    "tl tr"
-    "main sidebar"
-    "ft ft";
+    "l r";
+}
+.blog {
+    display: flex;
+    border: 1px solid teal;
+    grid-area: l;
+    font-size: 22px
+}
+.about {
+    display: flex;
+    grid-area: r;
+    font-size: 22px
 }
 
-.header {
-    border: 1px solid red;
-    grid-area: tl;
-}
-.sidebar {
-    border: 1px solid red;
-    grid-area: sidebar;
-}
-.main {
-    border: 1px solid red;
-    grid-area: main;
-}
-.footer {
-    border: 1px solid red;
-    grid-area: ft;
+.main:hover {
+    opacity: ;
+    transition: .3s ease;
+    background-color: #DCDCDC;
+    color: white;
 }
