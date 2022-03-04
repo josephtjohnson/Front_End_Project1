@@ -38,7 +38,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-area: nav;
         font-weight: bold;
-        border-bottom: 3px solid teal;
+        border-bottom: solid teal;
     }
         .navBox {
             display: flex;
@@ -125,6 +125,10 @@
         text-decoration: underline;
     }
     a {
+        color: black;
+        text-decoration: none;
+    }
+    a.navLine{
         color: black;
         text-decoration: none;
     }

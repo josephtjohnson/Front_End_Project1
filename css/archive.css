@@ -3,16 +3,17 @@
     display: grid;
     display: 100%;
     grid-template-columns: 400px;
-    grid-template-rows: 50px 20px 40px  400px 130px;
+    grid-template-rows: minmax(75px, auto);
     grid-template-areas:
     "hd"
     "sb"
     "nav"
+    "title"
     "main"
     "ft";
     background-color: #f8f8ff;
     justify-content: center;
-    grid-gap: 15px;
+    grid-gap: 20px;
 }
     #header {
         display: flex;
@@ -25,7 +26,6 @@
     }
     #subtitle {
         display: flex;
-        flex-wrap: nowrap;
         font-size: 20px;
         grid-area: sb;
         font-family: 'Playfair Display', serif;
@@ -36,10 +36,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-area: nav;
-        justify-content: center;
-        align-items: center;
         font-weight: bold;
-        border-bottom: 3px solid teal;
+        border-bottom: solid teal;
     }
         .navBox {
             display: flex;
@@ -47,53 +45,90 @@
             font-size: 20px;
             justify-content: space-evenly;
         }
-                #blog:hover {
+                #navButton:hover {
                     cursor:pointer;
                     opacity: 0.5;
                 }
-                #about:hover {
-                    cursor:pointer;
-                    opacity: 0.5;
-                }
+    .title {
+        display: grid;
+        grid-area: title;
+        font-size: 32px;
+        margin-top: 10px;
+        font-weight: 500;
+        padding-bottom: 10px;
+        text-align: center;
+        line-height: 1.2em;
+    }
     .main{
         display: grid;
-        width: 100%;
-        grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
-        grid-area: main;
-        font-family: 'Playfair Display', serif;
-        font-size: 20px;
-        padding-left: 12px;
-        gap: 2px;
-        border: 1px solid black;
-        justify-content: center;
-        align-items: center;
+        grid-auto-rows: 200px;
+        grid-gap: 10px;
+        font-size: 28px;
     }
-        .card {
+        #card{
             display: flex;
+            border: 1px solid black;
             justify-content: center;
             align-items: center;
-            width: 100px;
-            height: 100px;
-            border: 1px solid black;
-            color: teal;
+            text-align: center;
         }
-
+        #card:hover {
+            cursor:pointer;
+            background: teal;
+            color: white;
+        }
     .footer {
         display: grid;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
         grid-area: ft;
         font-family: 'Playfair Display', serif;
         font-size: 20px;
         justify-content: center;
         align-items: center;
-        color: teal;
     }
-        #info {
+        .bottomBox {
             display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
         }
-    a {
-        color: teal;
+        #articles:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            color: black;
+        }
+
+    p {
+        margin: 0em;
+        padding: 1em;
+    }
+    q {
+        margin-bottom: 0em;
+        margin-top: 0em;
+    }
+    hr {
+        border: 0;
+        clear:both;
+        display:block;
+        width: 96%;
+        background-color: black;
+        height: 1px;
+    }
+    h1,
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        text-decoration: underline;
+    }
+    a.card {
+        color: black;
+        text-decoration: none;
+        padding: 100px 100px;
+    }
+    a.navLine{
+        color: black;
         text-decoration: none;
     }
 
@@ -103,34 +138,41 @@
         // rules for medium-sized screen
         display: grid;
         grid-area: 100%;
-        grid-template-columns: 125px 100px 125px 75px 175px;
-        grid-template-rows: 50px 20px 40px  400px 75px;
+        grid-template-columns: 475px;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
-        "hd hd hd hd hd"
-        "sb sb sb sb sb"
-        "nav nav nav nav nav"
-        "main main main main main"
-        "ft ft ft ft ft";
+        "hd"
+        "sb"
+        "nav"
+        "title"
+        "main"
+        "ft";
         background-color: #f8f8ff;
         justify-content: center;
     }
+    .main {
+        grid-template-columns: 1fr;
+    }
   }
-
     /* Laptop screens */
     @media (min-width:901px) {
       .container {
         // rules for large screen
         display: grid;
         grid-area: 100%;
-        grid-template-columns: 225px 300px 300px 250px 150px;
-        grid-template-rows: 50px 20px 40px  400px 75px;
+        grid-template-columns: 1100px;
+        grid-template-rows: minmax(75px, auto);
         grid-template-areas:
-        "hd hd hd hd hd"
-        "sb sb sb sb sb"
-        "nav nav nav nav nav"
-        "main main main main main"
-        "ft ft ft ft ft";
+        "hd"
+        "sb"
+        "nav"
+        "title"
+        "main"
+        "ft";
         background-color: #f8f8ff;
         justify-content: center;
+      }
+      .main {
+          grid-template-columns: repeat(3, 1fr);
       }
     }
