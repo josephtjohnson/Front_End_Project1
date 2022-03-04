@@ -76,6 +76,9 @@
             #top{
                 align-items: center;
                 font-weight: bold;
+                font-size: 22px;
+                text-align: center;
+                text-decoration: underline;
             }
             #box1:hover {
                 cursor:pointer;
@@ -129,6 +132,10 @@
     }
     a.navLine{
         color: black;
+        text-decoration: none;
+    }
+    a.home {
+        color: teal;
         text-decoration: none;
     }
 
