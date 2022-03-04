@@ -101,12 +101,15 @@
             background-image: url('../images/never-stop.jfif');
         }
         #btn {
-            font-size: 20px;
+            font-size: 18px;
             font-family: 'Josefin Sans', sans-serif;
+            justify-content: center;
             align-items: center;
             cursor: pointer;
             display: inline-block;
             text-align: center;
+            border: 1px solid black;
+            padding: 5px;
         }
         #btn:hover{
             background-color: #F0F8FF;
@@ -137,6 +140,9 @@
     a.home {
         color: teal;
         text-decoration: none;
+    }
+    a.link {
+        color: black;
     }
 
     /* Tablet screens */
