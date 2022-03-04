@@ -116,16 +116,21 @@
             opacity: 0.5;
             transition: 0.15s ease-out;
         }
-    .footer {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-area: ft;
-        font-family: 'Playfair Display', serif;
-        font-size: 20px;
-        justify-content: center;
-        align-items: center;
-        color: teal;
-    }
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-area: ft;
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+            .bottomBox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: auto;
+            }
         #info {
             display: flex;
         }

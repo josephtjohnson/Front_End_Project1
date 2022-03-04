@@ -93,12 +93,6 @@
             align-items: center;
             width: auto;
         }
-        #articles:hover {
-            cursor: pointer;
-            opacity: 0.5;
-            color: black;
-        }
-
     p {
         margin: 0em;
         padding: 1em;
