@@ -1,5 +1,5 @@
 
-.container{
+#container.homepage{
     display: grid;
     display: 100%;
     grid-template-columns: 400px;
@@ -152,7 +152,7 @@
 
     /* Tablet screens */
     @media (min-width: 600px) and (max-width:900px) {
-      .container {
+      #container.homepage {
         // rules for medium-sized screen
         display: grid;
         grid-area: 100%;
@@ -171,7 +171,7 @@
 
     /* Laptop screens */
     @media (min-width:901px) {
-      .container {
+      #container.homepage {
         // rules for large screen
         display: grid;
         grid-area: 100%;

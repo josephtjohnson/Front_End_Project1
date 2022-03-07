@@ -1,0 +1,9 @@
+#subtitle {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    grid-area: sb;
+    font-family: 'Playfair Display', serif;
+    align-items: center;
+    justify-content: center;
+}

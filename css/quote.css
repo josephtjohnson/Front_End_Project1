@@ -1,0 +1,9 @@
+.quote {
+    display: flex;
+    grid-area: qt;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

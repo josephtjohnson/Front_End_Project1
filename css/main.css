@@ -1,3 +1,10 @@
-@import "./style.css";
-@import "./blog.css";
-@import "./about.css";
+@import "./tags.css";
+@import "./container.css";
+@import "./header.css";
+@import "./subtitle.css";
+@import "./nav.css";
+@import "./main-area.css";
+@import "./sidebar.css";
+@import "./footer.css";
+@import "./quote.css";
+@import "./title.css";

@@ -1,5 +1,5 @@
 
-.container{
+#container.blog{
     display: grid;
     display: 100%;
     grid-template-columns: 400px;
@@ -16,40 +16,6 @@
     background-color: #f8f8ff;
     grid-gap: 20px;
 }
-    #header {
-        display: flex;
-        font-size: 50px;
-        grid-area: hd;
-        font-family: 'Josefin Sans', sans-serif;
-        color: teal;
-        align-items: center;
-        justify-content: center;
-    }
-    #subtitle {
-        display: flex;
-        font-size: 20px;
-        grid-area: sb;
-        font-family: 'Playfair Display', serif;
-        align-items: center;
-        justify-content: center;
-    }
-    .nav {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-area: nav;
-        font-weight: bold;
-        border-bottom: solid teal;
-    }
-        .navBox {
-            display: flex;
-            font-family: 'Playfair Display', serif;
-            font-size: 20px;
-            justify-content: space-evenly;
-        }
-                #navButton:hover {
-                    cursor:pointer;
-                    opacity: 0.5;
-                }
     .title {
         display: grid;
         grid-area: title;
@@ -123,18 +89,6 @@
     }
     h3 {
         text-decoration: underline;
-    }
-    a {
-        color: black;
-        text-decoration: none;
-    }
-    a.navLine{
-        color: black;
-        text-decoration: none;
-    }
-    a.home {
-        color: teal;
-        text-decoration: none;
     }
 
     /* Tablet screens */
