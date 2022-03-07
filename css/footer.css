@@ -1,39 +1,43 @@
 .footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-area: ft;
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-area: ft;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
 }
-    .bottomBox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-    }
+
+.bottomBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
 #info {
-    display: flex;
+  display: flex;
 }
 
 #footer.blog {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-area: ft;
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-area: ft;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
 }
-    #bottomBox.blog {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-    }
-    #articles:hover {
-        cursor: pointer;
-        opacity: 0.5;
-        color: black;
-    }
+
+#bottomBox.blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+#articles:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  color: black;
+}
