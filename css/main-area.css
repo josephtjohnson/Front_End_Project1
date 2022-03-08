@@ -5,7 +5,9 @@
 }
 
 #picture {
-  background-image: url('../images/never-stop.jfif');
+  background-image: url('../images/try.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 #btn {
