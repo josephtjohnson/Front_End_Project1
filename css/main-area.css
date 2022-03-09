@@ -58,8 +58,8 @@
 
 #card:hover {
   cursor: pointer;
-  background: teal;
   color: white;
+  opacity: 0.5;
 }
 
 @media (min-width: 600px) and (max-width:900px) {
