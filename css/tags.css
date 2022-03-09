@@ -81,3 +81,7 @@ form {
     display: inline-block;
     margin-left: 41.5%;
 }
+
+section.blog {
+    display: block;
+}
