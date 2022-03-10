@@ -13,9 +13,16 @@ a.articles:hover {
 }
 
 a.card {
+  position: absolute;
   color: black;
   text-decoration: none;
   padding: 100px 100px;
+}
+
+a.card:hover {
+    font-weight: 900;
+    text-decoration: underline;
+    background-color: white;
 }
 
 a.blog {
@@ -65,12 +72,17 @@ h3 {
   text-decoration: underline;
 }
 
-img {
+#bioImg {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     border-radius: 50%;
+}
+
+#cardImg {
+    height: 100%;
+    width: 100%;
 }
 
 figcaption {
