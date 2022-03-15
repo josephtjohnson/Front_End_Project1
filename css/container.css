@@ -33,7 +33,7 @@
     // rules for large screen
     display: grid;
     grid-area: 100%;
-    grid-template-columns: 225px 300px 300px 250px 150px;
+    grid-template-columns: 200px 200px 200px 150px 100px;
     grid-template-rows: 50px 20px 40px 400px 75px;
     grid-template-areas: "hd hd hd hd hd" "sb sb sb sb sb" "nav nav nav nav nav" "main main main sidebar sidebar" "ft ft ft ft ft";
     background-color: #f8f8ff;
@@ -75,7 +75,7 @@
     // rules for large screen
     display: grid;
     grid-area: 100%;
-    grid-template-columns: 1225px;
+    grid-template-columns: 900px;
     grid-template-rows: minmax(75px, auto);
     grid-template-areas: "hd" "sb" "nav" "title" "qt" "main" "article" "ft";
     background-color: #f8f8ff;
@@ -115,7 +115,7 @@
     // rules for large screen
     display: grid;
     grid-area: 100%;
-    grid-template-columns: 1200px;
+    grid-template-columns: 900px;
     grid-template-rows: minmax(75px, auto);
     grid-template-areas: "hd" "sb" "nav" "title" "main" "ft";
     background-color: #f8f8ff;
